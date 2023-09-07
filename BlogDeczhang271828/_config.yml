@@ -3,17 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: ZCC 的学术主页
+subtitle: 'ZCC 之學術主頁'
+description: 'Tansing-Tiunn e hok-sut tsu-iah'
 keywords:
 author: Tansing Tiunn
-language: en/cn
-timezone: ''
+avatar: https://avatars.githubusercontent.com/u/58904820?v=4
+language: zh-TW
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://czhang271828.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -105,3 +106,11 @@ deploy:
   type: git
   repo: https://github.com/czhang271828/czhang271828.github.io.git
   branch: master
+
+mathjax:
+  tags: none               # or 'ams' or 'all'
+  single_dollars: true     # enable single dollar signs as in-line math delimiters
+  cjk_width: 0.9           # relative CJK char width
+  normal_width: 0.6        # relative normal (monospace) width
+  append_css: true         # add CSS to every page
+  every_page: false        # if true, every page will be rendered by mathjax regardless the `mathjax` setting in Front-matter of each article
