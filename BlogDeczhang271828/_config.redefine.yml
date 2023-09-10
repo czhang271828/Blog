@@ -10,7 +10,7 @@
 # BASIC INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 info:
   # Site title
-  title: 張陳成之學術主頁
+  title: 張陳成的學術主頁
   # Author name
   author: Tansing Tiunn
   # Site URL
@@ -21,11 +21,11 @@ info:
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 defaults:
   # Favicon
-  favicon: https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/logo autumner.svg
+  favicon: https://czhang271828.github.io/imgs/redefine/redefine-favicon.svg
   # Site logo
-  logo: https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/logo autumner.svg
+  logo: https://czhang271828.github.io/imgs/redefine/redefine-logo.svg
   # Site avatar
-  avatar: https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/redefine-avatar.svg
+  avatar: https://czhang271828.github.io/imgs/redefine/redefine-avatar.svg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -44,13 +44,13 @@ global:
   fonts:
     # Chinese fonts
     chinese: 
-      enable: false # Whether to enable custom chinese font
-      family:  # Font family
+      enable: true # Whether to enable custom chinese font
+      family: 宋体 # Font family
       url:  # Font URL to CSS file
     # English fonts
     english: 
-      enable: false # Whether to enable custom chinese font
-      family:  # Font family
+      enable: true # Whether to enable custom chinese font
+      family: Times New Roman # Font family
       url:  # Font URL to CSS file
   # Content max width
   content_max_width: 1000px
@@ -62,8 +62,8 @@ global:
     scale: false # scale effect
   # Scroll progress
   scroll_progress:
-    bar: false # progress bar
-    percentage: true # percentage
+    bar: true # progress bar
+    percentage: false # percentage
   # Website counter
   website_counter:
     url: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js # counter API URL (no need to change)
@@ -103,10 +103,10 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: /images/wallhaven-wqery6-light.webp # light mode
-    dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    light: /images/夜间模式 [转换].png # light mode
+    dark: /images/日间模式 [转换].png # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: 上滑以閱覽最新頁面
   # Home banner subtitle
   subtitle:
     text: [] # subtitle text, array
@@ -142,14 +142,14 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: false
+    enable: true
     # Social links
     links:
-      github:  # your GitHub URL
-      instagram: # your Instagram URL
-      zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
-      email:  # your email
+      github: https://github.com/czhang271828 # your GitHub URL
+      instagram: secret # your Instagram URL
+      zhihu: secret # your ZhiHu URL
+      twitter: secret # your twitter URL
+      email: zhangchencheng@sjtu.edu.cn # your email
       # ...... # you can add more
     # Social links with QRcode drawers
     qrs:
@@ -277,14 +277,14 @@ articles:
     # Whether to enable article recommendation
     enable: false
     # Article recommendation title
-    title: 推荐阅读
+    title: 推薦閱讀
     # Max number of articles to display
     limit: 3
     # Max number of articles to display mobile
     mobile_limit: 2
     # Placeholder image
-    placeholder: /images/wallhaven-wqery6-light.webp
-    # Skip directory
+    placeholder: /images/夜间模式 [转换].png
+    # Skip directorypng
     skip_dirs: []
 # ARTICLE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
