@@ -102,4 +102,6 @@ theme: 3-hexo
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:czhang271828/czhang271828.github.io.git
+  branch: master
