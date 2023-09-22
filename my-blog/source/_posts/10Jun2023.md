@@ -1,0 +1,33 @@
+Q: Suppose $A \in M_n$ and $\sigma_1(A) \leq 1$, that is, $A$ is a contraction. If $\mathrm{H}(A) \equiv\frac{1}{2}\left(A+A^*\right)=I$, show that $A=I$.  
+
+***
+
+A: First recall the lemma: $A$ is normal iff $A^\ast = AV$ for some unitary matrix $V$. 
+
+> $\Longleftarrow$: Since
+> $$
+> [A^\ast =AV]\Leftrightarrow [A=V^\ast A^\ast]\Leftrightarrow [VA=A^\ast],
+> $$
+> we see that $A$ and $V$ commutes. Hence
+> $$
+> A^\ast A=(AV)A=A(VA)=AA^\ast.
+> $$
+> $\Longrightarrow$: If $A$ is normal, then we have the decomposition $A=U^\ast \Lambda U$ for unitary matrix $U$ and diagonal matrix
+> $$
+> \begin{align*}
+> \Lambda&=\mathrm{diag}(\lambda_1,\ldots ,\lambda_n)\\
+> &=\mathrm{diag}(|\lambda_1|,\ldots |\lambda_n|)\cdot \mathrm{diag}(e^{i\theta_1},\ldots, e^{i\theta_n})\\
+> &=:R\cdot \Theta.
+> \end{align*}
+> $$
+> Hence $A=U^\ast R \Theta U$, and
+> $$
+>  A^\ast =U^\ast \Theta^\ast RU=U^\ast R\Theta UU^\ast (\Theta^\ast)^2 U=A(U^\ast \Theta^\ast \Theta^\ast U).
+> $$
+> Therefore, $V=U^\ast \Theta^\ast \Theta^\ast U$.
+
+When $A+A^\ast =2I$, we have that
+$$
+I=\dfrac12R(\Theta^\ast +\Theta)=R\cdot \mathrm{Re}(\Theta).
+$$
+Since $\|\mathrm{Re}(\Theta)\|\leq 1$, we learn that both $R$ and $\Theta$ are $\{\pm 1\}^n$-valued. Now it is clear that $R\Theta=I$.
