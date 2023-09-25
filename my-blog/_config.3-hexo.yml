@@ -49,9 +49,9 @@ category:
     - 答疑整理
     - 其他分类
   width:
-    lg: 150 # 1468px<屏幕宽度 左侧分类宽度
-    md: 120 # 1024px<屏幕宽度<=1468px 左侧分类宽度
-    sm: 120 # 426px<屏幕宽度<=1024px 左侧分类宽度（ipad）
+    lg: 220 # 1468px<屏幕宽度 左侧分类宽度
+    md: 200 # 1024px<屏幕宽度<=1468px 左侧分类宽度
+    sm: 200 # 426px<屏幕宽度<=1024px 左侧分类宽度（ipad）
 # 多级分类说明：
 # 比如在文章中设置多个菜单，则默认为多级菜单，即：工具>hexo
 # categories:
@@ -241,11 +241,11 @@ disqus:
 
 
 gitalk:
-  githubID: yelog
-  repo: yelog.github.io
+  githubID: 
+  repo: 
   ClientID:
   ClientSecret:
-  adminUser: yelog
+  adminUser: 
   distractionFreeMode: true
   language: zh-TW
   perPage: 10
@@ -262,8 +262,8 @@ gitalk:
 
 
 gitment:
-  owner: yelog
-  repo: yelog.github.io
+  owner: 
+  repo: 
   client_id:
   client_secret:
   # gitment : 通过github issue实现的评论系统

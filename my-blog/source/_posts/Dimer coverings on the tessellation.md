@@ -15,7 +15,7 @@ mathjax: true
 
 # Dimer covering and Kasteleyn Matrix
 
-<center>ZCC ID</center>
+<center>Author Name</center>
 
 ***
 
@@ -33,7 +33,7 @@ Let $G_{m,n}$ denotes the number of schemes to cover the $m\times n$  board with
 
 One notice that such $m\times n$ grid graph is a bipartite, as is it shown in the chess board that each pair of squares (vertices in the graph) under the same colour is non-adjacent. Let $\mathscr W=\{W_k\}_{k=1}^N$, $\mathscr B=\{B_k\}_{k=1}^N$ be the set of white and black vertices respectively in the given $m\times n$ grid graph. We also make the graph directed under the following construction.
 
-<img src="https://files.mdnice.com/user/12571/07fa58af-122e-4af8-a3a4-6babbd507af5.png" alt="img" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/image-20230925125221087.png" alt="image-20230925125221087" style="zoom:33%;" />
 
 Let $K$ be a $N\times N$​ matrix such that 
 $$
@@ -49,7 +49,7 @@ Let $E'$ be a subset of edges in the grid graph. Whenever $E'$ is a dimer config
 $$
 \det K=\sum_{\sigma\in S_N}\mathrm{sgn}(\sigma)\prod_{i=1}^N k_{i,\sigma(i)},
 $$
-where $E'$ runs over all possible dimer configuartion. 
+where $E'$ runs over all possible dimer configuration. 
 
 Under the given direction, we claim that for each dimer configuration $E'_1=\{W_i,B_{\sigma_1(i)}\}_{i=1}^N$ and $E'_2=\{W_i,B_{\sigma_2(i)}\}_{i=1}^N$, we have
 $$
@@ -59,9 +59,9 @@ For simplicity, we assume all edges are weighted $1$ and to prove that
 $$
 \mathrm{sgn}(\sigma_1\sigma_2)\prod_{i=1}^N \mathrm{sgn}(k_{i,\sigma_1(i)}k_{i,\sigma_2(i)})=1.
 $$
-One notices the (adjoint) union of any two dimer configuration is the disjoint union of double edges and even circles. 
+One notices the (adjoin) union of any two dimer configuration is the disjoint union of double edges and even circles. 
 
-<img src="https://files.mdnice.com/user/12571/544c30b1-5591-4728-9e8a-4bfc8646a67d.png" alt="img" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/image-20230925125321994.png" alt="image-20230925125321994" style="zoom:33%;" />
 
 One notice that
 
@@ -168,7 +168,7 @@ The previous proof fails on the $m\times n$ torus torus, since two matchings may
 
 In fact, we can obtain the desired result in the the following orientations:
 
-![image-20220526195951136](https://s2.loli.net/2022/05/26/GQ7SiqxDYvHwRTc.png)
+![image-20220526195951136](https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/GQ7SiqxDYvHwRTc.png)
 
 As shown in the previous section, some circles occurs in the union of any two dimer configurations. Here $\mathcal D_{++}$ gives perseves the sign of circles that homotopy to a single point, while fails to perserve the other cases. 
 
@@ -203,17 +203,17 @@ The height function of a dimer configuration maps the vertices to $\mathbb Z$, w
 * When encircling in an white area clockwisely, the height ascends $1$ when the edge lies in the boundary of some dimer; descends $3$ otherwise.
 * Assume one given vertices is of zero height for reference. 
 
-<img src="https://s2.loli.net/2022/05/26/rGC3e19x8BzotgV.png" alt="image-20220526204621116" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/rGC3e19x8BzotgV.png" alt="image-20220526204621116" style="zoom:33%;" />
 
 Such function is well-defined for any possible scheme of dimer configuration. The height function on the boundary of the region is independent of the covering. One can see the boundary of $m\times n$ chess board is flat than that in a Aztec diamond, which leaves corners blank for some random dimer configurations. 
 
-<img src="https://s2.loli.net/2022/05/26/eF1X6R9sNck2vPj.png" alt="image-20220526210035530" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/eF1X6R9sNck2vPj.png" alt="image-20220526210035530" style="zoom:33%;" />
 
 ### The discrete analysis on dimer coverings
 
 Under some subtle change in the previous proof, the number of dimer configurations on $m\times n$ square is the absolute value of the determinant of the adjacency matrix of the grid graph, where with horizontal edges weighted $1$ and vertical edges weighted $i(=\sqrt{-1})$. For instance, the adjacency matrix of the following weighted $2\times 3$ chess board is 
 
-​                         $\small{A(G)=\begin{pmatrix}0&0&0&i&1&0\\0&0&0&1&i&1\\0&0&0&0&1&i\\i&1&0&0&0&0\\1&i&1&0&0&0\\0&1&i&0&0&0\\\end{pmatrix}}$       <img src="https://s2.loli.net/2022/05/27/BswDJn8f1vNq7Mr.png" alt="image-20220527142036661" style="zoom:33%;" />
+​                         $\small{A(G)=\begin{pmatrix}0&0&0&i&1&0\\0&0&0&1&i&1\\0&0&0&0&1&i\\i&1&0&0&0&0\\1&i&1&0&0&0\\0&1&i&0&0&0\\\end{pmatrix}}$       <img src="https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/BswDJn8f1vNq7Mr.png" alt="image-20220527142036661.png" style="zoom:33%;" />
 
 We call such adjacency matrix the Kasteleyn matrix (denoted by $K$) thenceforth. 
 
@@ -227,7 +227,7 @@ Then $Kf\equiv 0$ whenever $(\partial _x +i\partial _y f)\equiv 0$. Here $\parti
 
 One may observe that $K^\ast K$ is a Laplacian, i.e., 
 
-![image-20220527143941516](C:\Users\czhan\AppData\Roaming\Typora\typora-user-images\image-20220527143941516.png)
+![image-20230925125440324](https://cdn.jsdelivr.net/gh/czhang271828/imgs/test/image-20230925125440324.png)
 
 As a consequence, $4f(b)=\sum_{\varepsilon =0}^3f(b+2 i^\varepsilon )$, which is called the discrete mean value theorem. 
 
@@ -267,7 +267,7 @@ $$
 \tilde G(u,v)&=-\dfrac{1}{2\pi}\log(v-u),\\ \mathrm d\tilde G(u,v)&=\dfrac{1}{2\pi}\dfrac{\mathrm du_x+i\mathrm du_y}{v-u}. 
 \end{align*}
 $$
-Here $F_0=F_1=\dfrac{1}{\pi(v-u)}$. For the comformal mapping $\phi:U\to V$, then $\tilde G_V(u,v)=\tilde G_U(\phi(u),\phi(v))$. As a consequence, 
+Here $F_0=F_1=\dfrac{1}{\pi(v-u)}$. For the conformal mapping $\phi:U\to V$, then $\tilde G_V(u,v)=\tilde G_U(\phi(u),\phi(v))$. As a consequence, 
 $$
 \left\{\begin{align*}
 F_V^+(u,v)&=F^+_U(\phi(u),\phi(v))\phi'(v),\\

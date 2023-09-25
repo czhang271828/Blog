@@ -3,17 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: ZCC 的学术主页
+subtitle: 'ZCC 之學術主頁'
+description: 'Tansing-Tiunn e hok-sut tsu-iah'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Tansing Tiunn
+avatar: https://avatars.githubusercontent.com/u/58904820?v=4
+language: zh-TW
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://czhang271828.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
