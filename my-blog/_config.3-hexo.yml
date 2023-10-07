@@ -207,6 +207,7 @@ highlight:
 mathjax:
   on: true #是否启用
   per_page: false # 若只渲染单个页面，此选项设为false，页面内加入 mathjax: true
+  packages: tikz
 
 # Mermaid 支持
 mermaid:
