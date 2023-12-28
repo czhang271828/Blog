@@ -1,6 +1,6 @@
 ---
-title: 分析 HW4
-date: 2023-10-17 11:40:00
+title: 分析 HW5
+date: 2023-10-24 11:40:00
 category: 
 - 学科笔记
 - 博一(秋)
@@ -68,7 +68,14 @@ $$
 \mathbb E[\mathbb E[f\mid \mathscr G]\mid \mathscr H]=\mathbb E[f\mid \mathscr H]\quad \mu|_\mathscr H\text{-a.e.}.
 $$
 
-> **Proof** 
+> **Proof** The $\sigma$-subalgebras $\mathscr H\subseteq \mathscr G\subseteq \mathscr F$ gives 
+> $$
+> \mu|_{\mathscr H}=(\mu|_{\mathscr G})|_{\mathscr H}\quad \mu=\mu|_{\mathscr F}.
+> $$
+> Therefore, for any $F\in \mathscr H$ we have that
+> $$
+> \int_Ff\operatorname d\mu|_{\mathscr F}=\int_Ff\cdot \frac{\operatorname d \mu|_\mathscr H}{\operatorname d\mu|_\mathscr F}\operatorname d\mu |_{\mathscr F}=\int_Ff\cdot \frac{\operatorname d \mu|_\mathscr H}{\operatorname d\mu|_\mathscr G}\cdot \frac{\operatorname d \mu|_\mathscr G}{\operatorname d\mu|_\mathscr F}\operatorname d\mu |_{\mathscr F}. 
+> $$
 
 **Ex 6** Find $f\in \mathscr L^1(\mathbb R^d)$ such that there are $C,R>0$ satisfying
 $$
@@ -78,6 +85,23 @@ where $\mathcal Mf$ is the Hardy-Littlewood maximal function of $f$. Prove that 
 $$
 \mathscr L^d(\{\mathcal Mf>\alpha\})\geq \dfrac{C^\prime}{\alpha}.
 $$
-This shows the sharpness of the estimate in the Hardy-Littlewood maximal theorem.
+This shows the sharpness of the estimate in the Hardy-Littlewood maximal theorem. 
 
-> **Proof** 
+> **Proof** We claim that $f=\operatorname 1_{B_1(O)}$ is the desired function. For $|x|>1$, we have that 
+> $$
+> \mathcal Mf(x)\geq \dfrac{\omega_d}{(|x|+1)^d\omega_d}\geq \frac{1}{2^d\cdot |x|^d}，
+> $$
+> where $\omega_d=\mathscr L^d(B_1(O))$ is the volume of unit ball. 
+>
+> WLOG, let $f$ be such that $\int_{B_{r_0}(O)}|f|=I>0$. Then for arbitrary $0<\alpha\ll I$​, 
+> $$
+> \mathcal Mf(x)\geq F_{|x|+r_0}(x)\geq \frac{I}{(|x|+r_0)^d\cdot \omega_d}.
+> $$
+> Hence, $\{\mathcal Mf>\alpha\}$​ contains the set
+> $$
+> |x|<\sqrt[d]{\frac{I}{\alpha\cdot \omega_d}}-r_0.
+> $$
+> WLOG, suppose that $\alpha$ is small so that $2r_0<\sqrt[d]{\frac{I}{\alpha\cdot \omega_d}}$. Therefore, 
+> $$
+> \mathscr L^d(\{\mathcal Mf>\alpha\})\geq\omega_d\cdot \left(\frac{1}{2}\sqrt[d]{\frac{I}{\alpha\cdot \omega_d}}^d\right)=\dfrac{I}{2^d\cdot \alpha}.
+> $$
